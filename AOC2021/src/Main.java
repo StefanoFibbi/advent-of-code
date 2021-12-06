@@ -1,10 +1,9 @@
-import puzzles.AdventOfCodePuzzle;
-import puzzles.day02.AOC02;
+import puzzles.day04.AOC04;
 
 public class Main {
 
     public static void main(String[] args) {
-        puzzles.AdventOfCodePuzzle puzzle = new AOC02();
+        puzzles.AdventOfCodePuzzle puzzle = new AOC04();
 
         try {
             puzzle.run();
