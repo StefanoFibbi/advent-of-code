@@ -1,0 +1,4 @@
+package adventofcode
+
+fun main() {
+}
