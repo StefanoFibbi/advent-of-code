@@ -1,6 +1,7 @@
 enum class GameDay {
     ALL,
     D01,
+    D02,
     ;
 
     companion object {

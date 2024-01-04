@@ -16,7 +16,8 @@ sealed class AdventRunner {
         """.trimIndent())
         when (day) {
             GameDay.D01 -> d01()
-            else -> throw IllegalArgumentException("Unsupported day provided: $day")
+            GameDay.D02 -> d02()
+            GameDay.ALL -> throw IllegalArgumentException("Unsupported day provided: $day")
         }
         println()
     }
@@ -28,4 +29,5 @@ sealed class AdventRunner {
 
 
     abstract fun d01()
+    abstract fun d02()
 }

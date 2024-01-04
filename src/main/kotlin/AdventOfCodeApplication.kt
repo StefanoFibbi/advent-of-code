@@ -21,7 +21,8 @@ class AdventOfCodeApplication {
             val specs: RunSpecs = argsToSpecs(
                 argsMap = argsToMap(args)
             )
-            aocRunners[specs.year]?.run(specs.day)
+//            aocRunners[specs.year]?.run(specs.day)
+            aocRunners[GameYear.Y2023]?.run(GameDay.D02)
         }
 
         private fun argsToMap(args: Array<String>): ArgsMap =
