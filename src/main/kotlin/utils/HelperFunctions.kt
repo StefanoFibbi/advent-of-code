@@ -5,3 +5,8 @@ val Int.isNegative: Boolean
 
 val Int.isPositive: Boolean
     get() = this >= 0
+
+fun String.countOccurrencesOf(pattern: String): Int =
+    Regex(Regex.escape(pattern))
+        .findAll(this)
+        .count()
