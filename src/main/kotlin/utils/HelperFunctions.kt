@@ -10,3 +10,8 @@ fun String.countOccurrencesOf(pattern: String): Int =
     Regex(Regex.escape(pattern))
         .findAll(this)
         .count()
+
+fun <T> List<List<T>>.transpose(): List<List<T>> =
+    (0 until first().size).map { col ->
+        map { row -> row[col] }
+    }
